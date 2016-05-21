@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+    <property name="connection.url">jdbc:postgresql://127.0.0.1:5432/jbossewstestappplaye</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">adminrcehyid</property>
+    <property name="connection.password">152rQRc2y7CL</property>
+
+      <!--<property name="connection.url">jdbc:postgresql://127.0.0.1:5432/jbossewstestappplaye</property>-->
+      <!--<property name="connection.driver_class">org.postgresql.Driver</property>-->
+      <!--<property name="connection.username">adminrcehyid</property>-->
+      <!--<property name="connection.password">152rQRc2y7CL</property>-->
+
+    <!--<property name="dialect">org.hibernate.dialect.PostgreSQL92Dialect</property>-->
+    <!--<property name="connection.driver_class">org.postgresql.Driver</property>-->
+    <!--<property name="hibernate.connection.datasource">java:comp/env/jdbc/PostgreSQLDS</property>-->
+
+    <mapping class="com.nc_player.hibernate.model.UserEntity"/>
+    <mapping class="com.nc_player.hibernate.model.AlbumEntity"/>
+    <mapping class="com.nc_player.hibernate.model.ArtistEntity"/>
+    <mapping class="com.nc_player.hibernate.model.EventEntity"/>
+    <mapping class="com.nc_player.hibernate.model.TrackEntity"/>
+    <mapping class="com.nc_player.hibernate.model.TrackListEntity"/>
+
+    <mapping class="com.nc_player.hibernate.model.UserTypeEntity"/>
+    <mapping class="com.nc_player.hibernate.model.EventOfUserEntity"/>
+    <mapping class="com.nc_player.hibernate.model.TrackOfUserEntity"/>
+    <mapping class="com.nc_player.hibernate.model.TrackToListEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

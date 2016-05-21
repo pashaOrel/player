@@ -1,0 +1,13 @@
+
+#header {
+    background: #ccc;
+}
+#contentBlock{
+    background: whitesmoke;
+}
+#footer{
+   background: #ccc;
+}
+#empty{
+    height: 80px;
+}

@@ -1,0 +1,18 @@
+#all{
+    opacity:0.85;
+    filter:alpha(opacity=85);
+}
+#fft {
+    -webkit-transform: translateX(-350px) rotateX(-30deg) rotateY(30deg);
+    z-index: -1;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+}
+#fft2 {
+    -webkit-transform: translateX(-530px) rotateX(-30deg) rotateY(-30deg);
+    z-index: -1;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+}
